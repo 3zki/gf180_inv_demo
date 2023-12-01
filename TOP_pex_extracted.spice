@@ -1,0 +1,21 @@
+* NGSPICE file created from TOP.ext - technology: gf180mcuC
+
+.subckt TOP A Q VDD GND
+X0 Q A.t0 VDD.t1 VDD.t0 pfet_03v3 ad=1.3p pd=5.3u as=1.3p ps=5.3u w=2u l=0.28u
+X1 Q A.t1 GND.t1 GND.t0 nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+R0 A.n0 A.t1 60.6324
+R1 A.n0 A.t0 50.9859
+R2 A A.n0 4.00168
+R3 VDD.n0 VDD.t0 909.662
+R4 VDD.n0 VDD.t1 4.56542
+R5 VDD VDD.n0 0.0465872
+R6 Q Q.n1 6.1565
+R7 Q Q.n0 4.60529
+R8 GND.n0 GND.t0 2545.79
+R9 GND.n0 GND.t1 6.08384
+R10 GND GND.n0 0.0514016
+C0 A VDD 0.139f
+C1 VDD Q 0.146f
+C2 A Q 0.0875f
+.ends
+
